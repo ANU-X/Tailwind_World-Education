@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Education</title>
-    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="imgs/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="../css/all.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
@@ -18,17 +18,17 @@
   </head>
   <body>
     <div
-      class="hidden sm:flex justify-around items-center bg-[#ff1949] w-full h-10 text-white"
+      class="flex justify-around items-center bg-[#ff1949] w-full h-10 text-white"
     >
       <p>Phone: +987 654 321 000</p>
       <p>Email: myemail@mail.com</p>
     </div>
     <nav>
-      <div class="hidden sm:flex justify-around items-center my-6">
+      <div class="flex justify-around items-center my-2 md:my-6">
         <div>
-          <img src="./imgs/logo.png" alt="imgs" class="w-20" />
+          <img src="./imgs/logo.svg" alt="imgs" class="w-20" />
         </div>
-        <div class="flex items-center gap-4">
+        <div class="hidden md:flex items-center gap-4">
           <ul class="flex gap-8">
             <li class="hover:text-[#ff1949]"><a href="#"> HOME </a></li>
             <li class="hover:text-[#ff1949]"><a href="#"> ABOUT </a></li>
@@ -43,43 +43,46 @@
             BOOK NOW
           </button>
         </div>
-      </div>
-      <!-- mobil manu -->
       <button
-        class="sm:hidden focus:outline-none ml-auto cursor-pointer"
+        class="sm:hidden focus:outline-none ml-auto cursor-pointer text-2xl"
         id="manu-btn"
       >
         <i class="fa-solid fa-bars"></i>
       </button>
+      </div>
+      <!-- mobil manu -->
+
       <div
-        class="flex flex-col justify-center items-center bg-amber-600 text-white space-y-8 w-full h-screen text-2xl sm:hidden"
+        class="hidden active:block "
         id="mobil-manu"
       >
+      <ul class="flex flex-col justify-center items-center bg-green-500/50 text-white space-y-8 w-full h-screen text-2xl">
         <a href="#"> HOME </a>
         <a href="#"> ABOUT </a>
         <a href="#"> COURSES </a>
         <a href="#"> GALLERY </a>
         <a href="#"> BLOG </a>
         <a href="#"> CONTACT </a>
+        </ul>
       </div>
     </nav>
 
     <header class="relative">
       <div
-        class="w-full h-screen bg-[url('./imgs/hero.jpg')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center"
+        class="w-full h-screen bg-[url('./imgs/hero-2.webp')] bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center"
       >
-        <h1 class="text-2xl sm:text-6xl text-white">Best</h1>
-        <h1 class="text-2xl sm:text-6xl text-white">Education Template</h1>
+        <h1 class="text-2xl md:text-4xl lg:text-6xl text-white">Best</h1>
+        <h1 class="text-2xl md:text-4xl lg:text-6xl text-white">Education Template</h1>
         <button
-          class="bg-[#ff1949] px-5 py-1 rounded-2xl mt-4 hover:bg-[#ff1949]"
+          class="bg-[#ff1949] text-lg lg:text-2xl px-6 md:px-10 py-2 rounded-full mt-4 hover:bg-white cursor-pointer"
         >
           about us
         </button>
       </div>
       <!-- --------------------------------------------- -->
-      <div class="absolute lg:-bottom-30 lg:left-100 md:-bottom-30 md:left-10">
+      <div class="hidden lg:block absolute lg:-bottom-30 lg:left-50 md:-bottom-30 md:left-10">
         <div
-          class="hidden w-[700px] h-[250px] sm:flex justify-center items-center text-gray-700 bg-white gap-30 rounded-2xl shadow-2xl"
+          class="w-[700px] h-[250px] flex justify-center items-center text-gray-700 bg-white gap-30 rounded-2xl shadow-2xl"
         >
           <div>
             <h1 class="text-2xl">
@@ -99,21 +102,21 @@
           </div>
           <div>
             <div class="flex gap-4">
-              <img src="./imgs/development.png" alt="imgs" class="w-10" />
+              <img src="./imgs/development.svg" alt="imgs" class="w-10" />
               <div>
                 <h3>Development</h3>
                 <p>20 COURSES</p>
               </div>
             </div>
             <div class="flex gap-4 my-4" id="designs">
-              <img src="./imgs/design.png" alt="imgs" class="w-10" />
+              <img src="./imgs/design.svg" alt="imgs" class="w-10" />
               <div>
                 <h3>Design</h3>
                 <p>30 COURSES</p>
               </div>
             </div>
             <div class="flex gap-4">
-              <img src="./imgs/marketing.png" alt="imgs" class="w-10" />
+              <img src="./imgs/marketing.svg" alt="imgs" class="w-10" />
               <div>
                 <h3>Marketing</h3>
                 <p>25 COURSES</p>
@@ -124,8 +127,8 @@
       </div>
     </header>
  
-    <section class=" flex flex-col justify-center items-center w-full h-screen">
-      <div class="flex flex-col justify-center items-center mt-10 md:mt-20 mb-10">
+    <section class=" flex flex-col justify-center items-center w-full gap-10 py-20 md:py-40">
+      <div class="flex flex-col justify-center items-center">
         <h1 class="font-Lato font-bold text-2xl text-[#030d28]">
           OUR TEACHERS
         </h1>
@@ -133,14 +136,14 @@
         <hr class="w-6 text-gray-500" />
       </div>
 
-      <div class="sm:flex justify-center items-center sm:gap-30 lg:gap-30 mb-10 h-100 ">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-20 px-5">
         <div
-          class="relative flex flex-col justify-center items-center mb-24 sm:mb-0"
+          class="relative flex flex-col justify-center items-center my-12 md:my-16"
         >
           <img
-            src="./imgs/profile-1.jpg"
+            src="./imgs/profile-1.webp"
             alt="imgs"
-            class="w-34 rounded-full"
+            class="w-34 md:w-50 rounded-full"
           />
           <div
             class="absolute flex flex-col justify-center items-center gap-1 w-50 h-18 bg-white shadow-[0_0_12px_0_#cfcdcdce] -bottom-14"
@@ -152,12 +155,12 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col justify-center items-center mb-24 sm:mb-0"
+          class="relative flex flex-col justify-center items-center my-12 md:my-16"
         >
           <img
-            src="./imgs/profile-3.png"
+            src="./imgs/profile-3.webp"
             alt="imgs"
-            class="w-34 rounded-full"
+            class="w-34 md:w-50 rounded-full"
           />
           <div
             class="absolute flex flex-col justify-center items-center gap-1 w-50 h-18 bg-white shadow-[0_0_12px_0_#cfcdcdce] -bottom-14"
@@ -169,12 +172,12 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col justify-center items-center mb-24 sm:mb-0"
+          class="relative flex flex-col justify-center items-center my-12 md:my-16"
         >
           <img
-            src="./imgs/profile-2.jpg"
+            src="./imgs/profile-2.webp"
             alt="imgs"
-            class="w-34 rounded-full"
+            class="w-34 md:w-50 rounded-full"
           />
           <div
             class="absolute flex flex-col justify-center items-center gap-1 w-50 h-18 bg-white shadow-[0_0_12px_0_#cfcdcdce] -bottom-14"
@@ -186,12 +189,12 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col justify-center items-center mb-24 sm:mb-0"
+          class="relative flex flex-col justify-center items-center my-12 md:my-16"
         >
           <img
-            src="./imgs/profile-4.png"
+            src="./imgs/profile-4.webp"
             alt="imgs"
-            class="w-34 rounded-full"
+            class="w-34 md:w-50 rounded-full"
           />
           <div
             class="absolute flex flex-col justify-center items-center gap-1 w-50 h-18 bg-white shadow-[0_0_12px_0_#cfcdcdce] -bottom-14"
@@ -206,8 +209,7 @@
     </section>
 
     <!-- ------------------------------------------------ -->
-
-    <section class="relative flex flex-col md:flex-row mt-100 md:mt-20 mb-20 ">
+    <section class="relative flex flex-col md:flex-row">
       <div class="relative w-full md:w-1/2 flex flex-col justify-center text-white px-20 py-16 bg-[#030d28]">
         <h2 class="font-Lato text-3xl mb-6" >WHY STUDY WITHUS?</h2>
         <p class="font-Lato leading-relaxed mb-3">
@@ -224,78 +226,69 @@
         </button>
       </div>
       <div class="relative w-full md:w-1/2">
-        <img src="./imgs/bgm.jpg" alt="imgs" class="h-full">
+        <img src="./imgs/bgm.webp" alt="imgs" class="h-full">
         <div class="absolute inset-0 flex justify-center items-center">
           <button class="bg-white/70 flex justify-center items-center w-14 h-14 rounded-full cursor-pointer hover:bg-white/90">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#FF0059]" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M8 5v14l11-7z" />
+            <i class="fa-solid fa-play"></i>
           </button>
         </div>
       </div>
     </section>
 
 <!-- ------------------------------------------------------- -->
- <section class=" grid grid-rows-1 md:grid-cols-2 gap-20 mx-10 md:mx-50 my-20">
-  <div class="w-60">
-    <img src="./imgs/cours-1.jpg" alt="images" class="">
-    <div class=" relative flex flex-col justify-center mx-auto py-10 px-10 bg-white w-100 shadow-[0_0_10px] 0 ">
-      <h2 class=" font-Lato font-bold text-[14pt]"> PHOTOSHOP LEARNING </h2>
-      <P class=" font-Lato text-[8pt] "> BY ADMIN/15 JUN 2025 </P>
-      <P class=" font-Lato my-3 "> Lorem lpsum is simply dummy text of <br> the printing and typesetting industry. </P>
-      <button class=" bg-[#fd2e5b] rounded-full text-white px-3 py-1.5 w-fit cursor-pointer hover:bg-[#fd5378]">
-        LEARN NOW
-      </button>
-      <div class=" absolute bg-[#030d28] text-white rounded-full px-4 py-4 w-fit -top-2 -right-2">
-        $60
-      </div>
+ <section class="w-full grid grid-cols-1 lg:grid-cols-2 justify-content-center align-items-center place-items-center gap-14 mx-auto px-12 py-20">
+  <div>
+    <div>
+      <img src="./imgs/cours-1.webp" alt="" class="w-80 md:w-100 lg:w-sm">
+    </div>
+    <div class="w-80 md:w-sm lg:w-md bg-white shadow-[0_0_10px] p-5 space-y-2">
+      <h1 class="font-bold text-lg">PHOTOSHOP LEARNING</h1>
+      <h3 class="text-sm">BY ADMING/15 JUN 2025</h3>
+      <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus fugiat quasi ullam suscipit quo veniam accusantium ipsum? Obcaecati, officiis. </P>
+      <button class="px-5 py-2 bg-red-600 rounded-full text-white"> LEARN NOW </button>
     </div>
   </div>
-  <div class="w-60">
-    <img src="./imgs/cours-2.jpg" alt="images">
-    <div class=" relative flex flex-col justify-center mx-auto py-10 px-10 bg-white w-100 shadow-[0_0_10px] 0 ">
-      <h2 class=" font-Lato font-bold text-[14pt]"> PHOTOSHOP LEARNING </h2>
-      <P class=" font-Lato text-[8pt] "> BY ADMIN/15 JUN 2025 </P>
-      <P class=" font-Lato my-3 "> Lorem lpsum is simply dummy text of <br> the printing and typesetting industry. </P>
-      <button class=" bg-[#fd2e5b] rounded-full text-white px-3 py-1.5 w-fit cursor-pointer hover:bg-[#fd5378]">
-        LEARN NOW
-      </button>
-      <div class=" absolute bg-[#030d28] text-white rounded-full px-4 py-4 w-fit -top-2 -right-2">
-        $60
-      </div>
+
+  <div>
+    <div>
+      <img src="./imgs/cours-2.webp" alt="" class="w-80 md:w-100 lg:w-sm">
     </div>
+    <div class="w-80 md:w-120 lg:w-md bg-white shadow-[0_0_10px] p-5 space-y-2">
+      <h1 class="font-bold text-lg">PHOTOSHOP LEARNING</h1>
+      <h3 class="text-sm">BY ADMING/15 JUN 2025</h3>
+      <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus fugiat quasi ullam suscipit quo veniam accusantium ipsum? Obcaecati, officiis. </P>
+      <button class="px-5 py-2 bg-red-600 rounded-full text-white"> LEARN NOW </button>
+    </div>   
   </div>
-  <div class="w-60">
-    <img src="./imgs/cours-3.jpg" alt="images">
-    <div class=" relative flex flex-col justify-center mx-auto py-10 px-10 bg-white w-100 shadow-[0_0_10px] 0 ">
-      <h2 class=" font-Lato font-bold text-[14pt]"> PHOTOSHOP LEARNING </h2>
-      <P class=" font-Lato text-[8pt] "> BY ADMIN/15 JUN 2025 </P>
-      <P class=" font-Lato my-3 "> Lorem lpsum is simply dummy text of <br> the printing and typesetting industry. </P>
-      <button class=" bg-[#fd2e5b] rounded-full text-white px-3 py-1.5 w-fit cursor-pointer hover:bg-[#fd5378]">
-        LEARN NOW
-      </button>
-      <div class=" absolute bg-[#030d28] text-white rounded-full px-4 py-4 w-fit -top-2 -right-2">
-        $60
-      </div>
+
+
+  <div>
+    <div>
+      <img src="./imgs/cours-3.webp" alt="" class="w-80 md:w-100 lg:w-sm">
     </div>
+    <div class="w-80 md:w-120 lg:w-md bg-white shadow-[0_0_10px] p-5 space-y-2">
+      <h1 class="font-bold text-lg">PHOTOSHOP LEARNING</h1>
+      <h3 class="text-sm">BY ADMING/15 JUN 2025</h3>
+      <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus fugiat quasi ullam suscipit quo veniam accusantium ipsum? Obcaecati, officiis. </P>
+      <button class="px-5 py-2 bg-red-600 rounded-full text-white"> LEARN NOW </button>
+    </div>    
   </div>
-  <div class="w-60">
-    <img src="./imgs/cours-4.jpg" alt="imges">
-    <div class=" relative flex flex-col justify-center mx-auto py-10 px-10 bg-white w-100 shadow-[0_0_10px] 0 ">
-      <h2 class=" font-Lato font-bold text-[14pt]"> PHOTOSHOP LEARNING </h2>
-      <P class=" font-Lato text-[8pt] "> BY ADMIN/15 JUN 2025 </P>
-      <P class=" font-Lato my-3 "> Lorem lpsum is simply dummy text of <br> the printing and typesetting industry. </P>
-      <button class=" bg-[#fd2e5b] rounded-full text-white px-3 py-1.5 w-fit cursor-pointer hover:bg-[#fd5378]">
-        LEARN NOW
-      </button>
-      <div class=" absolute bg-[#030d28] text-white rounded-full px-4 py-4 w-fit -top-2 -right-2">
-        $60
-      </div>
+
+  <div>
+    <div>
+      <img src="./imgs/cours-4.webp" alt="" class="w-80 md:w-100 lg:w-sm">
+    </div>
+    <div class="w-80 md:w-120 lg:w-md bg-white shadow-[0_0_10px] p-5 space-y-2">
+      <h1 class="font-bold text-lg">PHOTOSHOP LEARNING</h1>
+      <h3 class="text-sm">BY ADMING/15 JUN 2025</h3>
+      <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus fugiat quasi ullam suscipit quo veniam accusantium ipsum? Obcaecati, officiis. </P>
+      <button class="px-5 py-2 bg-red-600 rounded-full text-white"> LEARN NOW </button>
     </div>
   </div>
  </section>
 
-  <section class=" bg-amber-400 my-40">
-    <div class=" relative flex justify-center items-center bg-[url(./imgs/grow.jpg)]  w-full h-[400px] bg-cover bg-center bg-no-repeat">
+  <section class=" bg-amber-400 my-20">
+    <div class=" relative flex justify-center items-center bg-[url(./imgs/grow.webp)]  w-full h-[400px] bg-cover bg-center bg-no-repeat">
       <div class=" absolute bg-gray-700/70 inset-0"></div>
       <div class=" z-10 flex flex-col md:flex-row gap-10 md:gap-40 font-Lato font-bold text-white">
         <div>
@@ -318,9 +311,9 @@
     </div>
   </section>
 
-  <section class=" flex justify-center items-center gap-20 mb-20">
-    <div class=" w-100">
-      <img src="./imgs/df.png" alt="imgs">
+  <section class=" flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-10 my-20">
+    <div class=" w-80 md:w-100">
+      <img src="./imgs/df.webp" alt="imgs" loading="lazy">
       <h2>Post Title Goes Here</h2>
       <p>by admin / 28 september 2025</p>
       <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industry's standard dummy</p>
@@ -328,8 +321,8 @@
         READ MORE
       </button>
     </div>
-    <div class="w-100">
-      <img src="./imgs/bm.jpg" alt="imgs">
+    <div class="w-80 md:w-100">
+      <img src="./imgs/bm.webp" alt="imgs" loading="lazy">
       <h2>Post Title Goes Here</h2>
       <p>by admin / 28 september 2025</p>
       <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industry's standard dummy</p>
@@ -340,7 +333,7 @@
   </section>
 
   <footer>
-    <div class=" flex flex-col md:flex-row gap-10 md:gap-20 justify-center items-center text-white bg-[#030d28] w-full py-20">
+    <div class=" flex flex-col md:flex-row gap-10 lg:gap-30 justify-center items-center text-white bg-[#030d28] w-full py-20 lg:py-40 px-5">
       <div>
         <h1 class=" font-Lato font-extrabold text-2xl mb-4"> LOGO </h1>
         <p class=" leading-relaxed"> Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry. Lorem Ipsum has been <br> the industry's standard dummy </p>
@@ -362,7 +355,7 @@
     </div>
     <div class=" flex justify-center items-center bg-[#fd2e5b] w-full">
       <p class=" py-2 text-white">
-         Copyright &copy; 2025 All Rights Reserved powerd by <span class=" text-[#030d28] hover:text-white"><a href="#">anu</a></span>
+         &copy; 2025 All Rights Reserved powerd by <span class=" text-[#030d28] hover:text-white"><a href="#">anu</a></span>
       </p>
     </div>
   </footer>
